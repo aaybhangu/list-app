@@ -16,42 +16,19 @@
             <button class="btn btn-link" type="button" (click)="addList()">
               <img src="../assets/plus-icon.png" alt="" />
             </button>
-            <button
-              class="btn btn-link"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
+            <button class="btn btn-link" type="button">
               <img src="../assets/down-arrow.png" alt="" />
             </button>
           </div>
         </div>
 
-        <div
-          id="collapseOne"
-          class="collapse show"
-          aria-labelledby="headingOne"
-          data-parent="#accordionExample"
-        >
+        <div>
           <ul *ngFor="let item of items" class="list-group">
             <li class="list-group-item">
               <list-items (itemDeleted)="onDeleted($event)"></list-items>
             </li>
           </ul>
         </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          (click)="navbarCollapsed = !navbarCollapsed"
-          [attr.aria-expanded]="!navbarCollapsed"
-          aria-controls="navbarContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </div>
   </div>
