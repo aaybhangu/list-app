@@ -1,0 +1,6 @@
+.list-btn .col {
+  height: 8em;
+}
+.list-btn .btn-success {
+  background-image: linear-gradient(to right, rgba(2, 2, 2, 0.475), green);
+}
